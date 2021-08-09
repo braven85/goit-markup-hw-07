@@ -1,0 +1,145 @@
+.footer .container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.footer {
+  background-color: var(--es-and-footer-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-address-list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-address-list {
+  margin-top: 20px;
+}
+
+.footer-address-city,
+.footer-address-mail,
+.footer-address-tel {
+  color: var(--white-opacity-60-color);
+  font-family: inherit;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-address-city:hover,
+.footer-address-city:focus,
+.footer-address-mail:hover,
+.footer-address-mail:focus,
+.footer-address-tel:hover,
+.footer-address-tel:focus {
+  color: var(--white-color);
+}
+
+.join-us {
+  margin-top: 15px;
+  margin-left: 70px;
+  width: 206px;
+  height: 80px;
+}
+
+.join-us-text,
+.sign-up-text {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+
+.join-us-social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.join-us-social-list-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  fill: var(--white-color);
+  background-color: var(--footer-icon-background);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.join-us-social-list-link:hover,
+.join-us-social-list-link:focus {
+  fill: var(--white-color);
+  background-color: var(--blue-color);
+}
+
+.join-us-social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.sign-up {
+  margin-top: 15px;
+  margin-left: 78px;
+}
+
+.sign-up-email {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: var(--es-and-footer-bg-color);
+
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  letter-spacing: 0.03em;
+  padding-left: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.sign-up-email:focus {
+  outline: none;
+}
+
+.newsletter-fields {
+  display: flex;
+}
+
+.newsletter-button {
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+  background-color: var(--blue-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  color: var(--white-color);
+
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.newsletter-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 24px;
+  fill: var(--white-color);
+}

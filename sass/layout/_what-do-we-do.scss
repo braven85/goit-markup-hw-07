@@ -1,0 +1,38 @@
+.what-do-we-do-title {
+  margin-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.what-do-we-do-list {
+  display: flex;
+}
+
+.what-do-we-do-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.what-do-we-do-list-item {
+  position: relative;
+}
+
+.what-do-we-do-list-item > .what-do-we-do-label {
+  position: absolute;
+  background-color: var(--what-do-we-do-img-background);
+  color: var(--white-color);
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  width: 370px;
+  height: 70px;
+  bottom: 0;
+}
+
+.what-do-we-do-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

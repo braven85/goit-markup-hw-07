@@ -1,0 +1,86 @@
+.our-team {
+  background-color: var(--btn-white-bg-color);
+}
+
+.our-team-title {
+  margin-bottom: 50px;
+}
+
+.our-team-list {
+  display: flex;
+}
+
+.our-team-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-team-list-item {
+  background-color: var(--white-color);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team-worker-description {
+  padding: 30px 0px;
+}
+
+.our-team-worker-title {
+  margin-bottom: 10px;
+}
+
+.our-team-worker-position {
+  margin-bottom: 16px;
+}
+
+.what-do-we-do-title,
+.our-team-title,
+.our-customers-title {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.our-team-worker-title {
+  font-weight: 500;
+}
+
+.our-team-worker-position {
+  color: var(--grey-color);
+}
+
+.our-team-worker-title,
+.our-team-worker-position {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.social-list-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  fill: var(--grey-social-icon);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  fill: var(--white-color);
+  background-color: var(--blue-color);
+}
