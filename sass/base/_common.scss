@@ -1,26 +1,7 @@
-:root {
-  --solid-black-color: rgba(0, 0, 0, 100%);
-  --black-color: rgba(33, 33, 33, 100%);
-  --white-color: rgba(255, 255, 255, 100%);
-  --blue-color: rgba(33, 150, 243, 100%);
-  --grey-color: rgba(117, 117, 117, 100%);
-  --es-and-footer-bg-color: rgba(47, 48, 58, 100%);
-  --btn-white-bg-color: rgba(245, 244, 250, 100%);
-  --white-opacity-60-color: rgba(255, 255, 255, 60%);
-  --header-border-color: rgba(236, 236, 236, 100%);
-  --grey-social-icon: rgba(175, 177, 184, 100%);
-  --shadow: rgba(0, 0, 0, 0.25);
-  --footer-icon-background: rgba(255, 255, 255, 10%);
-  --what-do-we-do-img-background: rgba(47, 48, 58, 80%);
-  --portfolio-blue-overlay: rgba(33, 150, 243, 90%);
-  --backdrop-background: rgba(0, 0, 0, 20%);
-  --modal-window-button: rgba(0, 0, 0, 10%);
-}
-
 body {
-  font-family: 'Roboto', sans-serif;
-  color: var(--black-color);
-  background-color: var(--white-color);
+  font-family: $main-font;
+  color: $main-color;
+  background-color: $secondary-color;
 }
 
 h1,

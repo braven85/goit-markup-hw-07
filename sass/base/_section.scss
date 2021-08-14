@@ -1,8 +1,31 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94px 0;
 }
 
 .section-only-bottom {
   padding-bottom: 94px;
+}
+
+.effective-solutions {
+  @extend .section;
+}
+
+.attributes {
+  @extend .section;
+}
+
+.what-do-we-do {
+  @extend .section-only-bottom;
+}
+
+.team {
+  @extend .section;
+}
+
+.customers {
+  @extend .section;
+}
+
+.portfolio {
+  @extend .section;
 }

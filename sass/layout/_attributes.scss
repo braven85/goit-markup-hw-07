@@ -1,0 +1,48 @@
+.attributes {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    width: 270px;
+    height: 251px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__icon-background {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: $btn-white-bg-color;
+  }
+
+  &__icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  &__title {
+    font-weight: bold;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__content {
+    color: $nav-icons-color;
+    line-height: 1.714;
+  }
+
+  &__title,
+  &__content {
+    font-family: inherit;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+  }
+}

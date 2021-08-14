@@ -1,5 +1,5 @@
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: $secondary-font;
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
@@ -16,14 +16,14 @@
   }
 
   &__text {
-    color: var(--blue-color);
+    color: $third-color;
 
     &--light-theme {
-      color: var(--solid-black-color);
+      color: $btn-dark-font-color;
     }
 
     &--dark-theme {
-      color: var(--white-color);
+      color: $secondary-color;
     }
   }
 }

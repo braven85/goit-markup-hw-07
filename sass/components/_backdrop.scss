@@ -1,6 +1,6 @@
 .backdrop {
   display: flex;
-  background-color: var(--backdrop-background);
+  background-color: $backdrop-background-color;
   position: fixed;
   top: 0;
   left: 0;
@@ -15,24 +15,12 @@
   transition-timing-function: linear;
 }
 
-.is-hidden .modal-box {
-  transform: scale(0.8);
-}
-
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-}
 
-.close-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  background-color: var(--white-color);
-  border: 1px solid var(--modal-window-button);
-  border-radius: 50%;
-  cursor: pointer;
+  & .modal-box {
+    transform: scale(0.8);
+  }
 }

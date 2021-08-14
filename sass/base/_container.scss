@@ -5,10 +5,19 @@
   align-items: center;
 
   .header & {
-  display: flex;
-  padding-top: 24px;
-  padding-bottom: 25px;
- }
- 
-}
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 
+  .effective-solutions & {
+    display: block;
+    padding: 106px 0;
+    text-align: center;
+  }
+
+  .footer & {
+    display: flex;
+    align-items: flex-start;
+  }
+}
