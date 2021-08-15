@@ -1,15 +1,12 @@
 .attributes {
   &__list {
     display: flex;
+    column-gap: 30px;
   }
 
   &__item {
     width: 270px;
     height: 251px;
-
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
   }
 
   &__icon-background {
