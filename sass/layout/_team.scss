@@ -1,3 +1,14 @@
+@mixin display-align($disp, $align, $justify) {
+  display: $disp;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin width-height($width, $height) {
+  width: $width;
+  height: $height;
+}
+
 .team {
   background-color: $btn-white-bg-color;
 
@@ -36,18 +47,13 @@
   }
 
   &-social__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display-align(flex, center, center);
     column-gap: 10px;
   }
 
   &-social__link {
-    display: flex;
-    width: 44px;
-    height: 44px;
-    align-items: center;
-    justify-content: center;
+    @include display-align(flex, center, center);
+    @include width-height(44px, 44px);
     border-radius: 50%;
     fill: $social-icon-color;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -60,7 +66,6 @@
   }
 
   &-social__icon {
-    width: 20px;
-    height: 20px;
+    @include width-height(20px, 20px);
   }
 }

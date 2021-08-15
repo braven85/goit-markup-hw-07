@@ -1,3 +1,16 @@
+@mixin font($fontFamily, $fontWeight, $fontSize, $lineHeight, $letterSpacing) {
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpacing;
+}
+
+@mixin width-height($width, $height) {
+  width: $width;
+  height: $height;
+}
+
 .portfolio {
   &__buttons {
     width: 572px;
@@ -11,15 +24,11 @@
   }
 
   &__button {
+    @include font(inherit, 500, 16px, 1.625, 0.03em);
     color: $btn-dark-font-color;
     background-color: $btn-white-bg-color;
-    font-family: inherit;
     font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.625;
     text-align: center;
-    letter-spacing: 0.03em;
     padding: 6px 22px;
     border: none;
     border-radius: 4px;
@@ -61,27 +70,22 @@
   }
 
   &__img {
-    width: 370px;
-    height: 294px;
+    @include width-height(370px, 294px);
   }
 
   &__img-overlay {
+    @include width-height(100%, 100%);
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     background-color: $portfolio-overlay-color;
     transform: translateY(100%);
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__img-overlay > p {
+    @include font(inherit, inherit, 18px, 1.555, 0.03em);
     padding: 49px 45px 49px 24px;
-    font-family: inherit;
-    font-size: 18px;
-    line-height: 1.555;
-    letter-spacing: 0.03em;
     color: $secondary-color;
   }
 
@@ -93,22 +97,13 @@
     border-right: 1px solid $header-border-color;
   }
 
-  &__title,
-  &__description {
-    font-family: inherit;
-  }
-
   &__title {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+    @include font(inherit, bold, 18px, 2, 0.06em);
     margin-bottom: 4px;
   }
 
   &__description {
-    font-size: 16px;
-    line-height: 1.875;
-    letter-spacing: 0.03em;
+    @include font(inherit, 400, 16px, 1.875, 0.03em);
+    color: $nav-icons-color;
   }
 }

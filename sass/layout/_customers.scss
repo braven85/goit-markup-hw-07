@@ -1,32 +1,40 @@
+@mixin display-align($disp, $align, $justify) {
+  display: $disp;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin width-height($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin border-fill($border, $fill) {
+  border: $border;
+  fill: $fill;
+}
+
 .customers {
   &__list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include display-align(flex, center, center);
     column-gap: 30px;
   }
 
   &__item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 170px;
-    height: 92px;
-    border: 1px solid $social-icon-color;
+    @include display-align(flex, center, center);
+    @include width-height(170px, 92px);
+    @include border-fill(1px solid $social-icon-color, $social-icon-color);
     border-radius: 4px;
-    fill: $social-icon-color;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
-      border: 1px solid $third-color;
-      fill: $third-color;
+      @include border-fill(1px solid $third-color, $third-color);
       cursor: pointer;
     }
   }
 
   &__icon {
-    width: 106px;
-    height: 60.04px;
+    @include width-height(106px, 60.04px);
   }
 }

@@ -1,3 +1,31 @@
+@mixin width-height($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin font($fontFamily, $fontWeight, $fontSize, $lineHeight, $letterSpacing) {
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpacing;
+}
+
+@mixin col-bg-bor-box-disp($color, $bgcol, $border, $borrad, $boxsha, $disp) {
+  color: $color;
+  background-color: $bgcol;
+  border: $border;
+  border-radius: $borrad;
+  box-shadow: $boxsha;
+  display: $disp;
+}
+
+@mixin display-align($disp, $align, $justify) {
+  display: $disp;
+  align-items: $align;
+  justify-content: $justify;
+}
+
 .footer {
   background-color: $footer-background-color;
   padding-top: 60px;
@@ -13,13 +41,9 @@
 }
 
 .footer__link {
+  @include font(inherit, normal, 14px, 1.714, 0.03em);
   color: $footer-link-color;
-  font-family: inherit;
   font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
@@ -29,36 +53,26 @@
 }
 
 .join-us {
+  @include width-height(206px, 80px);
   margin-top: 15px;
   margin-left: 70px;
-  width: 206px;
-  height: 80px;
 }
 
 .join-us__title,
 .sign-up__title {
-  font-family: inherit;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.172;
-  letter-spacing: 0.03em;
+  @include font(inherit, bold, 14px, 1.172, 0.03em);
   color: $secondary-color;
   margin-bottom: 20px;
 }
 
 .join-us__list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include display-align(flex, center, center);
   column-gap: 10px;
 }
 
 .join-us__link {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  align-items: center;
-  justify-content: center;
+  @include width-height(44px, 44px);
+  @include display-align(flex, center, center);
   border-radius: 50%;
   fill: $secondary-color;
   background-color: $footer-icon-background;
@@ -72,8 +86,7 @@
 }
 
 .join-us__icon {
-  width: 20px;
-  height: 20px;
+  @include width-height(20px, 20px);
 }
 
 .sign-up {
@@ -86,21 +99,11 @@
 }
 
 .newsletter__email {
-  width: 358px;
-  height: 50px;
-  border: 1px solid $newsletter-email-color;
+  @include width-height(358px, 50px);
+  @include font(inherit, normal, 16px, 1.25, 0.03em);
+  @include col-bg-bor-box-disp($footer-link-color, $footer-background-color, 1px solid $newsletter-email-color, 4px, 0px 4px 4px rgba(0, 0, 0, 0.15), flex);
   box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  background-color: $footer-background-color;
-
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 1.25;
-  display: flex;
-  letter-spacing: 0.03em;
   padding-left: 16px;
-  color: $footer-link-color;
 
   &:focus {
     outline: none;
@@ -108,29 +111,17 @@
 }
 
 .newsletter__button {
+  @include width-height(200px, 50px);
+  @include font(inherit, bold, 16px, 1.875, 0.06em);
+  @include col-bg-bor-box-disp($secondary-color, $third-color, none, 4px, 0px 4px 4px rgba(0, 0, 0, 0.15), flex);
   margin-left: 12px;
-  width: 200px;
-  height: 50px;
-  background-color: $third-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-  color: $secondary-color;
-
-  font-family: inherit;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.875;
-  display: flex;
   align-items: center;
   justify-content: center;
-  letter-spacing: 0.06em;
   cursor: pointer;
 }
 
 .newsletter__icon {
-  width: 24px;
-  height: 24px;
+  @include width-height(24px, 24px);
   margin-left: 24px;
   fill: $secondary-color;
 }

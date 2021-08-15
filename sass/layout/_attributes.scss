@@ -1,27 +1,29 @@
 .attributes {
+  @mixin width-height($width, $height) {
+    width: $width;
+    height: $height;
+  }
+
   &__list {
     display: flex;
     column-gap: 30px;
   }
 
   &__item {
-    width: 270px;
-    height: 251px;
+    @include width-height(270px, 251px);
   }
 
   &__icon-background {
+    @include width-height(270px, 120px);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 270px;
-    height: 120px;
     margin-bottom: 30px;
     background-color: $btn-white-bg-color;
   }
 
   &__icon {
-    width: 70px;
-    height: 70px;
+    @include width-height(70px, 70px);
   }
 
   &__title {
