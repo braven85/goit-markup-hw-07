@@ -1,30 +1,4 @@
-@mixin width-height($width, $height) {
-  width: $width;
-  height: $height;
-}
-
-@mixin font($fontFamily, $fontWeight, $fontSize, $lineHeight, $letterSpacing) {
-  font-family: $fontFamily;
-  font-weight: $fontWeight;
-  font-size: $fontSize;
-  line-height: $lineHeight;
-  letter-spacing: $letterSpacing;
-}
-
-@mixin col-bg-bor-box-disp($color, $bgcol, $border, $borrad, $boxsha, $disp) {
-  color: $color;
-  background-color: $bgcol;
-  border: $border;
-  border-radius: $borrad;
-  box-shadow: $boxsha;
-  display: $disp;
-}
-
-@mixin display-align($disp, $align, $justify) {
-  display: $disp;
-  align-items: $align;
-  justify-content: $justify;
-}
+@import '../utils/mixins';
 
 .footer {
   background-color: $footer-background-color;

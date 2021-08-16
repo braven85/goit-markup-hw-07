@@ -1,8 +1,6 @@
+@import '../utils/mixins';
+
 .attributes {
-  @mixin width-height($width, $height) {
-    width: $width;
-    height: $height;
-  }
 
   &__list {
     display: flex;

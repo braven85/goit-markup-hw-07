@@ -1,13 +1,4 @@
-@mixin display-align($disp, $align, $justify) {
-  display: $disp;
-  align-items: $align;
-  justify-content: $justify;
-}
-
-@mixin width-height($width, $height) {
-  width: $width;
-  height: $height;
-}
+@import '../utils/mixins';
 
 .team {
   background-color: $btn-white-bg-color;

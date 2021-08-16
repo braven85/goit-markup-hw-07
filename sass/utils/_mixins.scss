@@ -1,0 +1,49 @@
+@mixin display-align($disp, $align, $justify) {
+  display: $disp;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin width-height($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin font($fontFamily, $fontWeight, $fontSize, $lineHeight, $letterSpacing) {
+  font-family: $fontFamily;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpacing;
+}
+
+@mixin top-left-right($top, $left, $right) {
+  top: $top;
+  left: $left;
+  right: $right;
+}
+
+@mixin border-fill($border, $fill) {
+  border: $border;
+  fill: $fill;
+}
+
+@mixin col-bg-bor-box-disp($color, $bgcol, $border, $borrad, $boxsha, $disp) {
+  color: $color;
+  background-color: $bgcol;
+  border: $border;
+  border-radius: $borrad;
+  box-shadow: $boxsha;
+  display: $disp;
+}
+
+@mixin eff-sol-mix($color, $fontFamily, $fontStyle, $fontWeight, $fontSize, $lineHeight, $letterSpacing, $margin) {
+  color: $color;
+  font-family: $fontFamily;
+  font-style: $fontStyle;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  letter-spacing: $letterSpacing;
+  margin: $margin;
+}
